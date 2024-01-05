@@ -3,7 +3,6 @@ package com.example.lesson2
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
-import android.widget.Toast
 
 class SecondActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -32,15 +31,15 @@ class SecondActivity : AppCompatActivity() {
 
         if (signPlayer == "rock")
             playerMove.setImageResource(R.drawable.rock)
-        else if (signComp == "rock")
+        if (signComp == "rock")
             compMove.setImageResource(R.drawable.rock)
-        else if (signPlayer == "cut")
+        if (signPlayer == "cut")
             playerMove.setImageResource(R.drawable.scissors)
-        else if (signComp == "cut")
+        if (signComp == "cut")
             compMove.setImageResource(R.drawable.scissors)
-        else if (signPlayer == "paper")
+        if (signPlayer == "paper")
             playerMove.setImageResource(R.drawable.paper)
-        else if (signComp == "paper")
+        if (signComp == "paper")
             compMove.setImageResource(R.drawable.paper)
     }
 }
